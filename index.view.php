@@ -18,7 +18,17 @@
     <h1>
       <!-- $name = $_GET["name"] -->
       <!-- <?php echo "Hello, " . $_GET["name"]; ?> -->
-      <?= $greeting; ?>
+      <ul>
+        <!-- <?php
+              foreach ($names as $name) {
+                echo "<li>$name</li>";
+              }
+              ?> -->
+        <!-- OR -->
+        <?php foreach ($names as $name) : ?>
+          <li><?= $name; ?></li>
+        <?php endforeach; ?>
+      </ul>
     </h1>
   </header>
 </body>

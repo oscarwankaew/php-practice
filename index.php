@@ -1,5 +1,13 @@
 <?php
 
-$greeting = "Hello, " . htmlspecialchars($_GET["name"]);
+$names = [
+  "Oscar Wankaew",
+  "John Doe",
+  "Jane Doe"
+];
+
+// foreach ($names as $name) {
+//   echo $name . ", ";
+// }
 
 require "index.view.php";
