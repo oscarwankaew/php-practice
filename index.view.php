@@ -25,9 +25,21 @@
               }
               ?> -->
         <!-- OR -->
-        <?php foreach ($person as $key => $feature) : ?>
-          <li><strong><?= $key; ?></strong> <?= $feature; ?></li>
-        <?php endforeach; ?>
+        <!-- <?php foreach ($task as $heading => $value) : ?>
+          <li><strong><?= ucwords($heading); ?> : </strong> <?= $value; ?></li>
+        <?php endforeach; ?> -->
+        <li>
+          <strong>Name:</strong> <?= $task["title"]; ?>
+        </li>
+        <li>
+          <strong>Due Date:</strong> <?= $task["due"]; ?>
+        </li>
+        <li>
+          <strong>Person:</strong> <?= $task["assigned_to"]; ?>
+        </li>
+        <li>
+          <strong>Status:</strong> <?= $task["completed"] ? "Complete" : "Incomplete"; ?>
+        </li>
       </ul>
     </h1>
   </header>

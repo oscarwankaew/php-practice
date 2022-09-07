@@ -1,12 +1,19 @@
 <?php
 
-$person = [
-  "name" => "Oscar Wankaew",
-  "age" => 28,
-  "career" => "Web developer"
+$task = [
+  "title" => "Coding Practice",
+  "due" => "daily",
+  "assigned_to" => "Oscar",
+  "completed" => false
 ];
 
-$person["hair"] = "black";
+// $person = [
+//   "name" => "Oscar Wankaew",
+//   "age" => 28,
+//   "career" => "Web developer"
+// ];
+
+// $person["hair"] = "black";
 
 //unset($person["age"]); to delete a selected "key, value" within an array
 
