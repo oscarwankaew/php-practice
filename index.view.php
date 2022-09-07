@@ -20,13 +20,13 @@
       <!-- <?php echo "Hello, " . $_GET["name"]; ?> -->
       <ul>
         <!-- <?php
-              foreach ($names as $name) {
+              foreach ($person as $name) {
                 echo "<li>$name</li>";
               }
               ?> -->
         <!-- OR -->
-        <?php foreach ($names as $name) : ?>
-          <li><?= $name; ?></li>
+        <?php foreach ($person as $key => $feature) : ?>
+          <li><strong><?= $key; ?></strong> <?= $feature; ?></li>
         <?php endforeach; ?>
       </ul>
     </h1>
