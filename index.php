@@ -4,7 +4,7 @@ $task = [
   "title" => "Coding Practice",
   "due" => "daily",
   "assigned_to" => "Oscar",
-  "completed" => false
+  "completed" => true
 ];
 
 // $person = [
