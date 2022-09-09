@@ -26,4 +26,13 @@ $task = [
 // echo "</pre>";
 // die(var_dump($person)); to only print out var_dump();
 
+function dd($one, $two, $three)
+{
+  echo "<pre>";
+  die(var_dump($one, $two, $three));
+  echo "</pre>";
+}
+
+dd("hello", "big", "world");
+
 require "index.view.php";
